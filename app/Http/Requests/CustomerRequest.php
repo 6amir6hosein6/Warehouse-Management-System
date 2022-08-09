@@ -36,7 +36,7 @@ class CustomerRequest extends FormRequest
 
             'name.required' => 'لطفا نام مشتری را وارد کنید',
 
-            'photo.max' => 'حداکثر حجم عکس بایت ۱۵۰ کیلو بایت باشد',
+            'photo.max' => 'حداکثر حجم عکس بایت 4 مگا بایت باشد',
             'photo.mimes' => 'فرمت فایل انتخاب شده نادرست است مقادیر مجاز : jpg jpeg png',
 
             'debt.min' => 'مبلغ بدهی نمیتواند منفی باشد',

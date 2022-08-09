@@ -74,7 +74,7 @@ class FactorController extends Controller
 
         $phone = $customer->phone;
         if ($phone) {
-            $this->sendFactorSMS($phone, $customer->name, $request->date, $total_price,$factor->id);
+            $this->sendFactorSMS($phone, $customer->name, $request->date, $total_price + $request->worker_paid ,$factor->id,$request->paid);
             return Redirect::route('factors.index')->with(
                 [
                     'status' => 'فاکتور با موفقیت اضافه شد',
