@@ -109,8 +109,8 @@
                                                 <label for="exampleInputPassword1"> نوع بدهی</label>
                                                 <select class="form-control" name="debt_kind" style="width: 100%;">
                                                     <option @if($customer->debt == 0) selected="selected" @endif value="0">بی حساب</option>
-                                                    <option @if($customer->debt < 0) selected="selected" @endif value="1">بدهکار</option>
-                                                    <option @if($customer->debt > 0) selected="selected" @endif value="-1">بستان کار</option>
+                                                    <option @if($customer->debt > 0) selected="selected" @endif value="1">بدهکار</option>
+                                                    <option @if($customer->debt < 0) selected="selected" @endif value="-1">بستان کار</option>
                                                 </select>
                                             </div>
                                         </div>
