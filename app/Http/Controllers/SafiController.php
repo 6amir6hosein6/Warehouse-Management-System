@@ -118,7 +118,8 @@ class SafiController extends Controller
     {
 
         DB::beginTransaction();
-
+        $safi = Safi::find($id);
+        $safi->delete();
         DB::commit();
 
         return Redirect::route('safis.index')->with('status', 'فاکتور صافی با موفقیت حذف شد');
